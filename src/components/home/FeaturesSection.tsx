@@ -41,7 +41,7 @@ const FeaturesSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-16" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
             Comprehensive Healthcare Solutions
           </h2>
@@ -54,7 +54,7 @@ const FeaturesSection = () => {
         {/* Features Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-border">
+            <Card key={index} className="group hover:shadow-medical transition-all duration-300 border-border" data-aos="fade-up" data-aos-delay={index * 100}>
               <CardHeader className="space-y-4">
                 <div className="flex items-center space-x-4">
                   {feature.image ? (
@@ -97,7 +97,7 @@ const FeaturesSection = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center mt-16">
+        <div className="text-center mt-16" data-aos="fade-up" data-aos-delay="600">
           <div className="bg-gradient-hero rounded-2xl p-8 md:p-12 text-white">
             <h3 className="text-2xl md:text-3xl font-bold mb-4">
               Ready to Transform Your Healthcare Practice?

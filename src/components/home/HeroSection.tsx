@@ -9,7 +9,7 @@ const HeroSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content */}
           <div className="space-y-8">
-            <div className="space-y-4">
+            <div className="space-y-4" data-aos="fade-up">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground leading-tight">
                 AI Powered{" "}
                 <span className="bg-gradient-primary bg-clip-text text-transparent">
@@ -24,7 +24,7 @@ const HeroSection = () => {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4" data-aos="fade-up" data-aos-delay="200">
               <Button size="lg" className="shadow-medical">
                 <Calendar className="w-5 h-5 mr-2" />
                 Schedule Demo
@@ -37,7 +37,7 @@ const HeroSection = () => {
             </div>
 
             {/* Stats */}
-            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border">
+            <div className="grid grid-cols-3 gap-8 pt-8 border-t border-border" data-aos="fade-up" data-aos-delay="400">
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-bold text-primary">500+</div>
                 <div className="text-sm text-muted-foreground">Healthcare Providers</div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
           </div>
 
           {/* Hero Image */}
-          <div className="relative">
+          <div className="relative" data-aos="fade-left" data-aos-delay="300">
             <div className="relative overflow-hidden rounded-2xl shadow-floating">
               <img
                 src={heroImage}
