@@ -75,7 +75,7 @@ const About = () => {
         {/* Hero Section */}
         <section className="bg-gradient-hero text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">
                 About HealthClick
               </Badge>
@@ -95,7 +95,7 @@ const About = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {stats.map((stat, index) => (
-                <Card key={index} className="text-center hover:shadow-medical transition-shadow">
+                <Card key={index} className="text-center hover:shadow-medical transition-shadow" data-aos="fade-up" data-aos-delay={index * 100}>
                   <CardContent className="p-6">
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 text-primary">
                       {stat.icon}
@@ -113,7 +113,7 @@ const About = () => {
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
+              <div data-aos="fade-right">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                   Our Mission
                 </h2>
@@ -137,7 +137,7 @@ const About = () => {
                 </Button>
               </div>
               
-              <div className="relative">
+              <div className="relative" data-aos="fade-left">
                 <Card className="p-8 shadow-floating">
                   <h3 className="text-xl font-bold text-foreground mb-6">What drives us:</h3>
                   <div className="space-y-4">
@@ -167,7 +167,7 @@ const About = () => {
         {/* Values Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Our Core Values
               </h2>
@@ -178,7 +178,7 @@ const About = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {values.map((value, index) => (
-                <Card key={index} className="p-8 hover:shadow-medical transition-shadow">
+                <Card key={index} className="p-8 hover:shadow-medical transition-shadow" data-aos="fade-up" data-aos-delay={index * 100}>
                   <div className="flex items-start space-x-4">
                     <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center text-primary">
                       {value.icon}
@@ -197,7 +197,7 @@ const About = () => {
         {/* Team Section */}
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Leadership Team
               </h2>
@@ -208,7 +208,7 @@ const About = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {team.map((member, index) => (
-                <Card key={index} className="text-center hover:shadow-medical transition-shadow">
+                <Card key={index} className="text-center hover:shadow-medical transition-shadow" data-aos="fade-up" data-aos-delay={index * 100}>
                   <CardContent className="p-6">
                     <div className="w-20 h-20 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Users className="w-10 h-10 text-primary-foreground" />
@@ -226,7 +226,7 @@ const About = () => {
         {/* CTA Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="bg-gradient-hero rounded-2xl p-8 md:p-12 text-white text-center">
+            <div className="bg-gradient-hero rounded-2xl p-8 md:p-12 text-white text-center" data-aos="fade-up">
               <h3 className="text-2xl md:text-3xl font-bold mb-4">
                 Ready to Join Our Healthcare Revolution?
               </h3>

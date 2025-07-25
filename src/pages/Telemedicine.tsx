@@ -48,7 +48,7 @@ const Telemedicine = () => {
         {/* Hero Section */}
         <section className="bg-gradient-hero text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">
                 Telemedicine Platform
               </Badge>
@@ -75,7 +75,7 @@ const Telemedicine = () => {
         {/* Benefits Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Why Choose Our Telemedicine Platform?
               </h2>
@@ -87,7 +87,7 @@ const Telemedicine = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               {benefits.map((benefit, index) => (
-                <Card key={index} className="text-center hover:shadow-medical transition-shadow">
+                <Card key={index} className="text-center hover:shadow-medical transition-shadow" data-aos="fade-up" data-aos-delay={index * 100}>
                   <CardHeader>
                     <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 text-primary">
                       {benefit.icon}
@@ -107,7 +107,7 @@ const Telemedicine = () => {
         <section className="py-20 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div>
+              <div data-aos="fade-right">
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
                   Complete Telemedicine Solution
                 </h2>
@@ -132,7 +132,7 @@ const Telemedicine = () => {
                 </div>
               </div>
               
-              <div className="relative">
+              <div className="relative" data-aos="fade-left">
                 <Card className="p-8 shadow-floating">
                   <div className="space-y-6">
                     <div className="flex items-center space-x-4">
@@ -173,7 +173,7 @@ const Telemedicine = () => {
         {/* Pricing Section */}
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16">
+            <div className="text-center mb-16" data-aos="fade-up">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
                 Flexible Pricing Plans
               </h2>
@@ -184,7 +184,7 @@ const Telemedicine = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
               {/* Starter Plan */}
-              <Card className="relative">
+              <Card className="relative" data-aos="fade-up" data-aos-delay="0">
                 <CardHeader className="text-center">
                   <CardTitle className="text-xl">Starter</CardTitle>
                   <div className="text-3xl font-bold text-primary">$99<span className="text-lg text-muted-foreground">/month</span></div>
@@ -214,7 +214,7 @@ const Telemedicine = () => {
               </Card>
 
               {/* Professional Plan */}
-              <Card className="relative border-primary shadow-medical">
+              <Card className="relative border-primary shadow-medical" data-aos="fade-up" data-aos-delay="100">
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary">Most Popular</Badge>
                 <CardHeader className="text-center">
                   <CardTitle className="text-xl">Professional</CardTitle>
@@ -249,7 +249,7 @@ const Telemedicine = () => {
               </Card>
 
               {/* Enterprise Plan */}
-              <Card className="relative">
+              <Card className="relative" data-aos="fade-up" data-aos-delay="200">
                 <CardHeader className="text-center">
                   <CardTitle className="text-xl">Enterprise</CardTitle>
                   <div className="text-3xl font-bold text-primary">Custom</div>

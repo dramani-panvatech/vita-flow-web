@@ -64,7 +64,7 @@ const PatientPortal = () => {
   const Dashboard = () => (
     <div className="space-y-8">
       {/* Welcome Section */}
-      <div className="bg-gradient-primary rounded-lg p-6 text-primary-foreground">
+      <div className="bg-gradient-primary rounded-lg p-6 text-primary-foreground" data-aos="fade-down">
         <div className="flex items-center space-x-4">
           <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center">
             <User className="w-8 h-8" />
@@ -76,7 +76,7 @@ const PatientPortal = () => {
         </div>
       </div>
 
-      <Tabs defaultValue="appointments" className="space-y-6">
+      <Tabs defaultValue="appointments" className="space-y-6" data-aos="fade-up" data-aos-delay="200">
         <TabsList className="grid w-full grid-cols-4">
           <TabsTrigger value="appointments">Appointments</TabsTrigger>
           <TabsTrigger value="records">Medical Records</TabsTrigger>
@@ -316,7 +316,7 @@ const PatientPortal = () => {
           {!isLoggedIn ? (
             <div className="max-w-6xl mx-auto">
               {/* Header Section */}
-              <div className="text-center mb-12">
+              <div className="text-center mb-12" data-aos="fade-up">
                 <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
                   Patient Portal
                 </h1>
@@ -328,12 +328,12 @@ const PatientPortal = () => {
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Login Form */}
-                <div>
+                <div data-aos="fade-right">
                   <LoginForm />
                 </div>
 
                 {/* Features */}
-                <div className="space-y-6">
+                <div className="space-y-6" data-aos="fade-left">
                   <h2 className="text-2xl font-bold text-foreground">What you can do:</h2>
                   <div className="space-y-4">
                     {[

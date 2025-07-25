@@ -84,7 +84,7 @@ const Blog = () => {
         {/* Hero Section */}
         <section className="bg-gradient-hero text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">
                 Healthcare Insights
               </Badge>
@@ -115,7 +115,7 @@ const Blog = () => {
               <h2 className="text-2xl font-bold text-foreground mb-2">Featured Article</h2>
             </div>
             
-            <Card className="overflow-hidden shadow-floating hover:shadow-medical transition-shadow">
+            <Card className="overflow-hidden shadow-floating hover:shadow-medical transition-shadow" data-aos="fade-up" data-aos-delay="200">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-auto">
                   <img 
@@ -187,7 +187,7 @@ const Blog = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {posts.map((post, index) => (
-                <Card key={index} className="overflow-hidden hover:shadow-medical transition-shadow group">
+                <Card key={index} className="overflow-hidden hover:shadow-medical transition-shadow group" data-aos="fade-up" data-aos-delay={index * 100}>
                   <div className="relative h-48">
                     <img 
                       src={post.image} 
@@ -244,7 +244,7 @@ const Blog = () => {
         {/* Newsletter Signup */}
         <section className="py-16 bg-secondary/30">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl mx-auto text-center">
+            <div className="max-w-2xl mx-auto text-center" data-aos="fade-up">
               <h3 className="text-2xl font-bold text-foreground mb-4">
                 Stay Updated with Healthcare Innovation
               </h3>

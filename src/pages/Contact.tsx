@@ -80,7 +80,7 @@ const Contact = () => {
         {/* Hero Section */}
         <section className="bg-gradient-hero text-white py-20">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-4xl mx-auto text-center">
+            <div className="max-w-4xl mx-auto text-center" data-aos="fade-up">
               <Badge className="mb-4 bg-white/20 text-white border-white/30">
                 Get in Touch
               </Badge>
@@ -98,7 +98,7 @@ const Contact = () => {
         {/* Contact Methods */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-12" data-aos="fade-up">
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 How Can We Help You?
               </h2>
@@ -110,7 +110,7 @@ const Contact = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {contactMethods.map((method, index) => (
-                <Card key={index} className="text-center hover:shadow-medical transition-shadow group">
+                <Card key={index} className="text-center hover:shadow-medical transition-shadow group" data-aos="fade-up" data-aos-delay={index * 100}>
                   <CardHeader>
                     <div className="w-16 h-16 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
                       {method.icon}
@@ -135,7 +135,7 @@ const Contact = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
               {/* Contact Form */}
-              <div>
+              <div data-aos="fade-right">
                 <Card className="shadow-floating">
                   <CardHeader>
                     <CardTitle className="text-2xl">Send Us a Message</CardTitle>
@@ -217,7 +217,7 @@ const Contact = () => {
               </div>
 
               {/* Contact Information */}
-              <div className="space-y-8">
+              <div className="space-y-8" data-aos="fade-left">
                 {/* Quick Contact */}
                 <Card>
                   <CardHeader>
@@ -299,7 +299,7 @@ const Contact = () => {
         {/* FAQ Section */}
         <section className="py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
+            <div className="text-center mb-12" data-aos="fade-up">
               <h2 className="text-3xl font-bold text-foreground mb-4">
                 Frequently Asked Questions
               </h2>
@@ -309,7 +309,7 @@ const Contact = () => {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <Card>
+              <Card data-aos="fade-up" data-aos-delay="0">
                 <CardHeader>
                   <CardTitle className="text-lg">How quickly can we get started?</CardTitle>
                 </CardHeader>
@@ -321,7 +321,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card data-aos="fade-up" data-aos-delay="100">
                 <CardHeader>
                   <CardTitle className="text-lg">Do you provide training?</CardTitle>
                 </CardHeader>
@@ -333,7 +333,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card data-aos="fade-up" data-aos-delay="200">
                 <CardHeader>
                   <CardTitle className="text-lg">Is the platform HIPAA compliant?</CardTitle>
                 </CardHeader>
@@ -345,7 +345,7 @@ const Contact = () => {
                 </CardContent>
               </Card>
 
-              <Card>
+              <Card data-aos="fade-up" data-aos-delay="300">
                 <CardHeader>
                   <CardTitle className="text-lg">What support options are available?</CardTitle>
                 </CardHeader>
